@@ -4,7 +4,7 @@ talk TSIP to a Trimble Thunderbolt GPS receiver,
 read PPS pulses, send time to ntpd via "shm" driver.
 
 /etc/ntp.conf should say:
-server 127.127.28.<UNIT> mode 1
+server 127.127.28.UNIT mode 1
 
 then run ntp-tsip as:
 ntp-tsip /dev/cuauX UNIT
